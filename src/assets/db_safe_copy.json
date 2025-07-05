@@ -1,0 +1,222 @@
+{
+    "exercises": [
+        {
+            "id": "1",
+            "name": "Flat Barbell Bench Press",
+            "instructions":"Lay flat on the bench, retract your scapula. Hands should be slightly wider than shoulder width apart.",
+            "link": "https://www.youtube.com/watch?v=gRVjAtPip0Y"
+        },
+        {
+            "id": "2",
+            "name": "Incline Dumbbell Bench Press",
+            "instructions":"Set bench to 30 degrees, retract your scapula. Elbows flared 45 degrees. Bring dumbbells to all the way down to your chest and press up.",
+            "link": "https://www.youtube.com/shorts/ou6s32mJgjU"
+        },
+        {
+            "id": "3",
+            "name": "Dumbbell Skull Crushers",
+            "instructions":"Lay flat on bench, elbows point to the ceiling. Keep elbows in and push up at eye level. Focus on not moving the elbow.",
+            "link": "https://www.youtube.com/watch?v=jPjhQ2hsAds"
+        },
+        {
+            "id": "4",
+            "name": "Dumbbell Shoulder Press",
+            "instructions":"Set bench to near vertical. Keep elbows stacked under wrists. Bring weights to shoulders and press up.",
+            "link": "https://www.youtube.com/watch?v=hOTABpGvhBc"
+        },
+        {
+            "id": "5",
+            "name": "Cable Flye",
+            "instructions":"Step and lean forward slightly. Focus on feeling the stretch in your chest.",
+            "link": "https://www.youtube.com/watch?v=4mfLHnFL0Uw"
+        },
+        {
+            "id": "6",
+            "name": "Leaning Cable Lateral Raise",
+            "instructions":"Lean away from the cable machine, focus on swinging the weight out, not up. Keep tension in the shoulders.",
+            "link": "https://www.youtube.com/watch?v=lq7eLC30b9w"
+        },
+        {
+            "id": "7",
+            "name": "Lat Pulldown",
+            "instructions":"Control the weight, feel the stretch at the top.",
+            "link": "https://www.youtube.com/watch?v=JGeRYIZdojU"
+        },
+        {
+            "id": "8",
+            "name": "Incline Dumbbell Curls",
+            "instructions":"Choose an appropriate weight and really control it. Feel the big stretch at the bottom.",
+            "link": "https://www.youtube.com/watch?v=aTYlqC_JacQ"
+        }
+
+    ],
+    "workouts": [
+        {
+            "workout_id": "1",
+            "name": "Basic Chest Day",
+            "date": "07/03/2025"
+        },
+        {
+            "workout_id": "2",
+            "name": "Push Day",
+            "date": "06/30/2025"
+        }
+        
+    ],
+    "workout_sets": [
+        {
+            "id": "1",
+            "workout_id": "1",
+            "exercise_id": "1",
+            "exercise_order": "1",
+            "reps": "10",
+            "weight": "135 lbs",
+            "notes": "Went to failure"
+        },
+        {
+            "id": "2",
+            "workout_id": "1",
+            "exercise_id": "1",
+            "exercise_order": "2",
+            "reps": "7",
+            "weight": "135 lbs",
+            "notes": "Went to failure"
+        },
+        {
+            "id": "3",
+            "workout_id": "1",
+            "exercise_id": "1",
+            "exercise_order": "3",
+            "reps": "5",
+            "weight": "135 lbs",
+            "notes": "Went to failure"
+        },
+        {
+            "id": "4",
+            "workout_id": "1",
+            "exercise_id": "5",
+            "exercise_order": "4",
+            "reps": "15",
+            "weight": "15 lbs",
+            "notes": "RPE 8"
+        },
+        {
+            "id": "5",
+            "workout_id": "1",
+            "exercise_id": "5",
+            "exercise_order": "5",
+            "reps": "13",
+            "weight": "15 lbs",
+            "notes": "RPE 8"
+        },
+        {
+            "id": "6",
+            "workout_id": "2",
+            "exercise_id": "1",
+            "exercise_order": "1",
+            "reps": "10",
+            "weight": "135 lbs",
+            "notes": "Went to failure"
+        },
+        {
+            "id": "7",
+            "workout_id": "2",
+            "exercise_id": "1",
+            "exercise_order": "2",
+            "reps": "8",
+            "weight": "135 lbs",
+            "notes": "Went to failure"
+        },
+        {
+            "id": "8",
+            "workout_id": "2",
+            "exercise_id": "1",
+            "exercise_order": "3",
+            "reps": "6",
+            "weight": "135 lbs",
+            "notes": "Went to failure"
+        },
+        {
+            "id": "9",
+            "workout_id": "2",
+            "exercise_id": "4",
+            "exercise_order": "4",
+            "reps": "8",
+            "weight": "30 lbs",
+            "notes": ""
+        },
+        {
+            "id": "10",
+            "workout_id": "2",
+            "exercise_id": "4",
+            "exercise_order": "5",
+            "reps": "7",
+            "weight": "30 lbs",
+            "notes": ""
+        },
+        {
+            "id": "11",
+            "workout_id": "2",
+            "exercise_id": "4",
+            "exercise_order": "6",
+            "reps": "6",
+            "weight": "30 lbs",
+            "notes": ""
+        },
+        {
+            "id": "12",
+            "workout_id": "2",
+            "exercise_id": "3",
+            "exercise_order": "7",
+            "reps": "8",
+            "weight": "20 lbs",
+            "notes": ""
+        },
+        {
+            "id": "13",
+            "workout_id": "2",
+            "exercise_id": "3",
+            "exercise_order": "8",
+            "reps": "6",
+            "weight": "20 lbs",
+            "notes": ""
+        },
+        {
+            "id": "14",
+            "workout_id": "2",
+            "exercise_id": "3",
+            "exercise_order": "9",
+            "reps": "8",
+            "weight": "20 lbs",
+            "notes": ""
+        },
+        {
+            "id": "15",
+            "workout_id": "2",
+            "exercise_id": "6",
+            "exercise_order": "10",
+            "reps": "15",
+            "weight": "10 lbs",
+            "notes": ""
+        },
+        {
+            "id": "16",
+            "workout_id": "2",
+            "exercise_id": "6",
+            "exercise_order": "11",
+            "reps": "13",
+            "weight": "10 lbs",
+            "notes": ""
+        },
+        {
+            "id": "17",
+            "workout_id": "2",
+            "exercise_id": "6",
+            "exercise_order": "12",
+            "reps": "11",
+            "weight": "10 lbs",
+            "notes": ""
+        }
+    ]
+
+}
