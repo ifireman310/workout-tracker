@@ -6,9 +6,7 @@ const Navigation = () => {
     const navLinks = [
         { to: '/', text: 'Workout' },
         { to: '/history', text: 'History' },
-        { to: '/planner', text: 'Planner' },
-        { to: '/about', text: 'About' },
-
+        { to: '/planner', text: 'Exercises' },
     ]
     return (
 

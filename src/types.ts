@@ -6,7 +6,7 @@ export type exercise = {
 }
 
 export type workout = {
-    workout_id: string
+    id: string
     name: string
     date: string
 }
@@ -25,4 +25,15 @@ export type newExerciseForm = {
     name: string
     instructions: string
     link: string
+}
+
+export type newWorkoutForm = {
+    name: string
+    date: string
+}
+
+export type newSetForm = {
+    weight: string
+    reps: string
+    notes: string
 }

@@ -1,5 +1,5 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
-import type { exercise, newExerciseForm, workout, workout_set } from "../../types";
+import type { exercise, newExerciseForm } from "../../types";
 import Table from 'react-bootstrap/Table';
 import Exercise from "../Exercise";
 
@@ -11,8 +11,6 @@ type PlannerProps = {
 
 function Planner({ exercises, addExercise, editExercise }: PlannerProps) {
 
-    const [edit, setEdit] = useState(false);
-    const [errorMessage, setErrorMessage] = useState("");
     const [showExercises, setShowExercises] = useState(false);
     const [formData, setFormData] = useState<newExerciseForm>({
         name: "",
@@ -44,6 +42,7 @@ function Planner({ exercises, addExercise, editExercise }: PlannerProps) {
     // Returns table rows of all exercises 
     const listExercises = exercises.map((e) => {
         return <Exercise
+            key={e.id}
             exercise={e}
             editExercise={editExercise}
         />
@@ -51,7 +50,7 @@ function Planner({ exercises, addExercise, editExercise }: PlannerProps) {
 
     return (
         <>
-            <h1>This is the planner page</h1>
+            <h1>View, Add, or Modify Exercises</h1>
 
             <form onSubmit={handleSubmit}>
                 <input
@@ -81,16 +80,21 @@ function Planner({ exercises, addExercise, editExercise }: PlannerProps) {
                 <button type="submit">Add Exercise</button>
             </form>
 
+            <br />
             <button onClick={() => setShowExercises(!showExercises)}>Show/Hide All Exercises</button>
 
+            <br />
+            <br />
             {
                 showExercises ? (
                     <Table striped bordered hover>
                         <thead>
-                            <th>Exercise Name</th>
-                            <th>Instructions</th>
-                            <th>Video Link</th>
-                            <th>Edit Exercise</th>
+                            <tr>
+                                <th>Exercise Name</th>
+                                <th>Instructions</th>
+                                <th>Video Link</th>
+                                <th>Edit Exercise</th>
+                            </tr>
                         </thead>
                         <tbody>{listExercises}</tbody>
                     </Table>

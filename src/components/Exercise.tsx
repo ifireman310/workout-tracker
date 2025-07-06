@@ -1,4 +1,4 @@
-import React, { useState, type ChangeEvent } from "react";
+import { useState, type ChangeEvent } from "react";
 import type { exercise, newExerciseForm } from "../types";
 
 type ExerciseProps = {
@@ -9,7 +9,6 @@ type ExerciseProps = {
 function Exercise({ exercise, editExercise }: ExerciseProps) {
 
     const [edit, setEdit] = useState(false);
-    const [error, setError] = useState(false);
     const [formData, setFormData] = useState<newExerciseForm>({
         name: exercise.name,
         instructions: exercise.instructions,
@@ -33,7 +32,6 @@ function Exercise({ exercise, editExercise }: ExerciseProps) {
             instructions: exercise.instructions,
             link: exercise.link
         })
-        setError(false)
     };
 
     const handleUpdate = (id: string, name: string, instructions: string, link: string) => {
