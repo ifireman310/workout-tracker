@@ -155,20 +155,6 @@ function Workout({ exercises, workouts, workout_sets, addWorkout, addSet, delete
     // Delete set if button is pressed
     const handleDeleteSet = (s: workout_set) => {
         deleteSet(s.id);
-
-        // Clear out any state data from previous edits the user was making
-        const tempWorkout = workout;
-
-        clearWorkout();
-        // Set the workout
-        handleWorkoutSelection(tempWorkout!);
-        // Set the workout sets (sort so that they appear in order)
-
-        // // re-render the workout sets (sort so that they appear in order)
-        // const filteredSets = workout_sets.filter((w) => w.workout_id === workout!.id);
-        // filteredSets.sort((a, b) => (Number(a.exercise_order) > Number(b.exercise_order)) ? 1 : -1);
-        // clearWorkout();
-
     }
 
     // Reset the state if user wants to start over
